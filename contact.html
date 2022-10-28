@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body>
+    <header class="page-header">
+        <img src="./img/logo.png" width="20%" alt="My logo">
+        <nav class="main-navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem"
+                        class="navigation-list__item navigation-list__item--active">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact">
+        <h1 id="contact">Contact</h1>
+        <p> <span style="font-style: italic;"> Granaasen 74A, <br>
+                1362 Hosle,<br>
+                Norway </span> </p>
+        <!-- add a linked email address-->
+        E-mail <a href="mailto:stela.ceaicovscaia@hotmail.com">stella.ceaicovscaia@hotmail.com</a> <br>
+        <!-- add a linked phone number-->
+        Tel <a href="tel:+47489158">+4748479158</a> <br>
+        <!-- add video chat info -->
+        Skype <a href="skype:stella.chaykovskaya@gmail.com">stella.chkv</a> <br>
+        <br>
+        <!-- add a call-to-action link-->
+        <a href="mailto:stela.ceaicovscaia@hotmail.com">Contact me</a>
+    </div>
+    <div class="forms">
+        <form action="" method="post" id="contact-form">
+            <label class="standard-label" for="contact-email">E-mail:</label>
+            <input type="email" id="contact-email" required>
+            <br>
+            <br>
+    
+            <label class="standard-label" for="contact-tel">Telephone:</label>
+            <input type="tel" id="contact-tel">
+            <br>
+            <br>
+    
+            <label class="standard-label" for="contact-message">Message:</label>
+            <textarea maxlength="240" id="contact-message" required></textarea>
+            <input type="submit" value="Send message">
+        </form>
+        </div>
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+            <img src="./img/GitHub.png" width="30px" alt="Github">
+            <img src="./img/twitter.png" width="30px" alt="Twitter">
+            <img src="./img/ln.png" width="30px" alt="LinkedIn">
+        </div>
+    </footer>
+    <script src="./js/tota11y.min.js"></script>
+</body>
+</html>

@@ -69,6 +69,10 @@ input, texture, select, button{
     flex-direction: column;
     text-align: center;
 }
+.social-media >img{
+    width: 30px;
+
+}
 .profile{
     max-width: 700px;
     margin: 0 auto;
@@ -83,6 +87,7 @@ input, texture, select, button{
 }
 .page-header__item{
     flex: 0 1 200px;
+    width: 15%;
 }
 .page-header__item:last-child{
     flex-grow: 1;
@@ -241,22 +246,11 @@ button:hover, button:focus, .button:hover, .button:focus{
 #clouds{
     left: -150px; 
     top: -150px;
-    animation: clouds 15s linear alternate-reverse infinite;
-    -webkit-animation: clouds 15s linear alternate-reverse infinite;
-    -moz-animation: clouds 15s linear alternate-reverse infinite;
-    -o-animation: clouds 15s linear alternate-reverse infinite;
+    animation: clouds 10s linear alternate-reverse infinite;
 }
-@-webkit-keyframes clouds{
+@keyframes clouds{
     0%{transform: translate(0, 50px)}
     100%{transform: translate(100px, 50px);}
-}
-@-moz-keyframesclouds{
-    0% {transform: translate(0, 50px)}
-    100% {transform: translate(100px, 50px);}
-}
-@-o-keyframes clouds{
-    0% {transform: translate(0, 50px)}
-    100% {transform: translate(100px, 50px);}
 }
 
 #waterfall{

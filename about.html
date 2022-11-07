@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About SC</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <link rel="stylesheet" type="text/css" href="./css/style.production.css">
 </head>
 <body>
     <header class="page-header">
-        <img src="./img/logo.png" alt="My logo" class="page-header__item">
+        <img src="./img/Logo.png" alt="My logo" class="page-header__item">
         <nav class="main-navigation page-header__item">
             <ul role="menubar" class="navigation-list">
                 <li role="presentation">
@@ -31,63 +34,62 @@
             </ul>
         </nav>
     </header>
+    <hr>
     <div class="about">
         <h1 id="about">About Me</h1>
         <p>Hi! I am a student at CareerFoundry Bootcamp and this page is about myself. This is what I enjoy doing:</p>
-        <ul>
+        <ul class="hobbies">
             <li>Front-end development</li>
-            <li>Bck-end development</li>
+            <li>Back-end development</li>
             <li>Test driven development</li>
+            <li>UX/UI design</li>
             <li>Hiking</li>
             <li>Working out</li>
-            <li>Hanging out with my dog</li>
+            <li>Cuddling with my dog</li>
         </ul>
     </div>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Skills</th>
-                <th>Years of experience</th>
-                <th>Level of expertise</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>HTML</td>
-                <td>3</td>
-                <td>Advanced</td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>2</td>
-                <td>Intermediate</td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td>1</td>
-                <td>Beginner</td>
-            </tr>
-            <tr>
-                <td>Figma</td>
-                <td>3</td>
-                <td>Advanced</td>
-            </tr>
-            <tr>
-                <td>Adobe Photoshop</td>
-                <td>1</td>
-                <td>Beginner</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="skills">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Skills</th>
+                    <th>Years of experience</th>
+                    <th>Level of expertise</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>3</td>
+                    <td>Advanced</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>2</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>1</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>Figma</td>
+                    <td>3</td>
+                    <td>Advanced</td>
+                </tr>
+                <tr>
+                    <td>Adobe Photoshop</td>
+                    <td>1</td>
+                    <td>Beginner</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     <br>
     
-    <div class="cv">
-        <a href="./files/CV.pdf" class="button" download>Download my CV</a>
-        <div class="arrow"></div>
-    </div>
-    
     <div class="scenery">
-        <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="400" height="400" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="waterfall-nature-svgrepo-com" clip-path="url(#clip0_3_2)">
                 <path id="Vector"
                     d="M256 512C397.385 512 512 397.385 512 256C512 114.615 397.385 0 256 0C114.615 0 0 114.615 0 256C0 397.385 114.615 512 256 512Z"
@@ -210,13 +212,14 @@
         </svg>
 
     </div>
-    
+    <hr>
+
     <footer class="page-footer">
         <p>Find me on</p>
         <div class="social-media">
-            <img src="./img/GitHub.png" alt="Github">
-            <img src="./img/twitter.png" alt="Twitter">
-            <img src="./img/ln.png" alt="LinkedIn">
+            <a href="https://github.com/StellaCea" class="fa fa-github" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/stela-ceaicovscaia-071808182/" class="fa fa-linkedin" target="_blank"></a>
+            <a href="https://www.facebook.com/profile.php?id=100000762145939" class="fa fa-facebook" target="_blank"></a>
         </div>
     </footer>
 <script src="./js/tota11y.min.js"></script>

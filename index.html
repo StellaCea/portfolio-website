@@ -8,14 +8,17 @@
     <title>Portfolio SC</title>
     <link rel="shortcut icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <link rel="stylesheet" type="text/css" href="./css/style.production.css">
 </head>
 
 <body>
     <header class="page-header">
-        <img src="./img/logo.png" alt="logo" class="page-header__item">
+        <img src="./img/Logo.png" alt="logo" class="page-header__item">
         <nav class="main-navigation page-header__item">
             <ul role="menubar" class="navigation-list">
                 <li role="presentation">
@@ -33,26 +36,30 @@
             </ul>
         </nav>
     </header>
+    <hr>
     <div class="profile">
         <img src="./img/ProfilePic.jpg" class="profile__portrait" alt="profile picture">
-        <h1>Hello World</h1>
-        <p>My name is Stella.</p>
+        <h1>Hi! I'm Stella</h1>
         <p>I'm a <span style="color:yellow; background-color: black;">
                     &lt;web&gt;
-                </span> developer from Oslo</p>
-        <a href="code.html">Check out some of my code</a>
+                </span> developer from Oslo and I like to create beautiful and functional websites. </p>
+    <a href="https://github.com/StellaCea" target="_blank">Check out some of my code</a> 
     </div>
+    <br>
+    <!-- 
     <a href="#">Default Link</a>
     <button type="button">Default Button</button>
-    <button class="button__secondary">Secondary Button</button>
-    <br>
-    <br>
+    <button class="button__secondary">Secondary Button</button> -->
+    
+    <a href="./files/CV.pdf" class="btn" download>Download my CV</a>
+
+    <hr>
     <footer class="page-footer">
         <p>Find me on</p>
         <div class="social-media">
-            <img src="./img/GitHub.png" alt="Github">
-            <img src="./img/twitter.png" alt="Twitter">
-            <img src="./img/ln.png" alt="LinkedIn">
+            <a href="https://github.com/StellaCea" class="fa fa-github" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/stela-ceaicovscaia-071808182/" class="fa fa-linkedin" target="_blank"></a>
+            <a href="https://www.facebook.com/profile.php?id=100000762145939" class="fa fa-facebook" target="_blank"></a>
         </div>
     </footer>
     <script src="./js/tota11y.min.js"></script>

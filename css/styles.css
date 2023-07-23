@@ -224,7 +224,6 @@ input, texture, select, button{
     align-items: center;
 }
 
-
 @media all and (max-width:500px){
     .grid{
         grid-template-columns: 1fr;
@@ -253,7 +252,6 @@ button:hover, button:focus, .button:hover, .button:focus{
     cursor:pointer;
     opacity: 0.8;
 }
-
 .btn:link{
     display: inline-block;
     font-family: inherit;
@@ -268,7 +266,6 @@ button:hover, button:focus, .button:hover, .button:focus{
     transition: 0.2s opacity;
     cursor: pointer;
 }
-
 .forms{
     width: 40%;
     padding: 40px;

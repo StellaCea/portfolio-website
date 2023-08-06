@@ -19,7 +19,7 @@ a {
 
 body {
     background-color: #FFFAF0;
-    font-family: 'Poppins', sans-serif;
+    font-family:'Times New Roman', Times, serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.6;
@@ -64,6 +64,7 @@ button {
 .profile {
     max-width: 700px;
     margin: 0 auto;
+    padding: 30px;
 }
 
 .page-header {
@@ -71,13 +72,16 @@ button {
     display: flex;
     width: 100%;
     padding: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px 0;
 }
 
 .page-header__item {
     flex: 0 1 200px;
 }
-
+.logo {
+    display: block;
+    width: 250px;
+}
 .page-header__item:last-child {
     flex-grow: 1;
     text-align: right;
@@ -132,7 +136,32 @@ button {
 .fa:hover {
     opacity: 0.7;
 }
+.intro-text{
+    display: flex;
+    flex-direction: column;
+}
 
+@media only screen and (max-width: 768px) {
+    .logo{
+        width: 100px;
+    }
+    .profile__portrait {
+        justify-content: center;
+        width: 50%;
+    }
+    .intro-text {
+        justify-content: center;
+        width: 100%;
+    }
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+}
 
 /*Add Grid*/
 /* Fallback*/
@@ -203,17 +232,25 @@ button {
 .about,
 .work {
     text-align: center;
-    margin: 0 30px;
+    margin: 0 20px;
 }
-
-.table {
+.about-content {
+    display: block;
+    justify-content: center;
+    padding: 0 20px 10px;
+}
+.skills {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+table {
     border: 1px solid black;
-    width: 50%;
     border-spacing: 25px;
     text-align: center;
     justify-content: center;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section {
@@ -222,15 +259,15 @@ button {
 
 .contact {
     position: relative;
-    padding: 0 100px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.contact-container {
-    width: 100%;
+.container {
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,6 +292,40 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.contact-form{
+    width: 100%;
+    padding: 40px;
+}
+.contact-form .standard-label {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contact-form .standard-label input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px auto;
+}
+
+@media only screen and (max-width: 768px){
+    .contact {
+        padding: 20px;
+        text-align: center;
+    }
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .container .contact-info {
+        margin-bottom: 40px;
+    }
+    .container .contact-info .forms .contact-form input{
+        width: 100%;
+    }
+    .forms {
+        text-align: center;
+    }
 }
 
 @media all and (max-width:500px) {
@@ -307,9 +378,12 @@ button:focus,
     transition: 0.2s opacity;
     cursor: pointer;
 }
+.btn-download {
+    margin-top: 20px;
+}
 
 .forms {
-    width: 40%;
+    width: 50%;
     padding: 40px;
     border-radius: 18px;
 }
@@ -359,7 +433,8 @@ input[type=submit] {
 /*Add Animation*/
 .coding-girl {
     text-align: center;
-
+    max-width: 90%;
+    margin: 0 20px;
 }
 
 #Head {
@@ -387,80 +462,5 @@ input[type=submit] {
 
     100% {
         transform: translateY(8px);
-    }
-}
-
-/*Image animation on About Page*/
-.scenery {
-    text-align: center;
-}
-
-#clouds {
-    left: -150px;
-    top: -150px;
-    animation: clouds 10s linear alternate-reverse infinite;
-}
-
-@keyframes clouds {
-    0% {
-        transform: translate(0, 50px)
-    }
-
-    100% {
-        transform: translate(100px, 50px);
-    }
-}
-
-#waterfall {
-    animation: waterfall 30s ease infinite;
-
-}
-
-@keyframes waterfall {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateX(0);
-    }
-
-    40% {
-        transform: translateX(-8px);
-    }
-
-    60% {
-        transform: translateX(-3px);
-    }
-}
-
-#water {
-    animation: 5s water alternate infinite linear;
-}
-
-@keyframes water {
-    0% {
-        transform: translateX(0%);
-    }
-
-    30% {
-        transform: translateX(0.5%) rotate(0.5deg);
-    }
-
-    45% {
-        transform: translateX(-0, 5%) rotate(-0.5deg);
-    }
-
-    60% {
-        transform: translateX(0.5%) rotate(0.5deg);
-    }
-
-    75% {
-        transform: translateX(-0.5%) rotate(-0.5deg);
-    }
-
-    100% {
-        transform: translateX(0%);
     }
 }

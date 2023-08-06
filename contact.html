@@ -18,7 +18,7 @@
 
 <body>
     <header class="page-header">
-        <img src="img/logo.png" alt="My logo" class="page-header__item">
+        <img src="img/logo.png" alt="My logo" class="page-header__item logo">
         <nav class="main-navigation page-header__item">
             <ul role="menubar" class="navigation-list">
                 <li role="presentation">
@@ -40,9 +40,12 @@
     </header>
 
     <section class="contact">
-        <h2>Please don't hesitate to contact me for any inquiries</h2>
-        <h2>...or use the contact form :)</h2>
-        <div class="contact-container">
+        <div class="content">
+            <h2>Please don't hesitate to contact me for any inquiries</h2>
+            <h3>...or use the contact form :)</h3>
+        </div>
+    
+        <div class="container">
             <div class="contact-info">
                 <div class="box">
                     <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
@@ -76,16 +79,12 @@
                     <label class="standard-label" for="contact-message">Message:</label>
                     <textarea maxlength="240" id="contact-message" required></textarea>
                     <br>
-                    <div class="center">
-                        <input type="submit" value="Send message">
-                    </div>
+                    <input type="submit" value="Send message">
                 </form>
             </div>
         </div>
     </section>
 
-
-    <hr>
     <footer class="page-footer">
         <p>Find me on</p>
         <div class="social-media">
